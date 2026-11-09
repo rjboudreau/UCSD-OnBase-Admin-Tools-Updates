@@ -1,9 +1,9 @@
 {
-    "version":  "0.3.6",
-    "fileName":  "UCSD-OnBase-Admin-Tools-v0.3.6-win-x64.zip",
-    "url":  "UCSD-OnBase-Admin-Tools-v0.3.6-win-x64.zip",
-    "sizeBytes":  89149802,
-    "sha256":  "FFC768BDF22D62CF6382BBFA66FD4BF87E01C6EDBFEBA32764FC66F70E9E37EA",
-    "releasedUtc":  "2026-11-09T20:06:43.4261731Z",
-    "notes":  "# Version 0.3.6\r\n\r\nAD Groups now clears the checked group rows automatically after a\r\nsuccessful membership apply. The selected people stay in the working set\r\nso you can verify the result immediately, but the completed groups no\r\nlonger look like a new staged selection.\r\n\r\nThis release also points the in-app updater at the production update\r\nfeed, so future releases can be delivered without entering a feed path.\r\n"
+    "version":  "0.3.7",
+    "fileName":  "UCSD-OnBase-Admin-Tools-v0.3.7-win-x64.zip",
+    "url":  "UCSD-OnBase-Admin-Tools-v0.3.7-win-x64.zip",
+    "sizeBytes":  89159446,
+    "sha256":  "BC8804576644E5E4C72EBDDC0B32CF4C8589D204A624036EA9D756E584F22F3E",
+    "releasedUtc":  "2026-11-09T23:06:34.2721998Z",
+    "notes":  "# Version 0.3.7\r\n\r\nAD Groups now explains its authorization model before you approve changes:\r\nevery command runs with your signed-in Windows account, and AD enforces\r\nthe OnBase OU and group rights command by command. The review no longer\r\nimplies that a dry run proves real-run permissions; -WhatIf validates the\r\ncommands without changing AD.\r\n\r\nWhen AD denies a command, the result and history now say \"Permission\r\ndenied\" and name the right to request, such as Create Group rights on the\r\nOnBase OU or Modify Membership / Write Members rights on the affected AD\r\ngroup. Other failures keep their original error details.\r\n"
 }
