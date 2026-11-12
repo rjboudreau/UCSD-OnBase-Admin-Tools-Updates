@@ -1,9 +1,9 @@
 {
-    "version":  "0.3.7",
-    "fileName":  "UCSD-OnBase-Admin-Tools-v0.3.7-win-x64.zip",
-    "url":  "UCSD-OnBase-Admin-Tools-v0.3.7-win-x64.zip",
-    "sizeBytes":  89159446,
-    "sha256":  "BC8804576644E5E4C72EBDDC0B32CF4C8589D204A624036EA9D756E584F22F3E",
-    "releasedUtc":  "2026-11-09T23:06:34.2721998Z",
-    "notes":  "# Version 0.3.7\r\n\r\nAD Groups now explains its authorization model before you approve changes:\r\nevery command runs with your signed-in Windows account, and AD enforces\r\nthe OnBase OU and group rights command by command. The review no longer\r\nimplies that a dry run proves real-run permissions; -WhatIf validates the\r\ncommands without changing AD.\r\n\r\nWhen AD denies a command, the result and history now say \"Permission\r\ndenied\" and name the right to request, such as Create Group rights on the\r\nOnBase OU or Modify Membership / Write Members rights on the affected AD\r\ngroup. Other failures keep their original error details.\r\n"
+    "version":  "0.4.1",
+    "fileName":  "UCSD-OnBase-Admin-Tools-v0.4.1-win-x64.zip",
+    "url":  "UCSD-OnBase-Admin-Tools-v0.4.1-win-x64.zip",
+    "sizeBytes":  90104179,
+    "sha256":  "E87530EBC05F0CF05D2D1E507EB8065972DE640D6757C52B406CE3FA90F20108",
+    "releasedUtc":  "2026-11-12T19:31:40.5211958Z",
+    "notes":  "# Version 0.4.1\n\nAD Groups history now tells you which memberships actually worked. A run\nthat applies members and then fails its post-write check no longer marks\nevery person as Failed: only the members the check named stay Failed, and\nthe rest read OK. Each history row carries the result line for that person\nand group, and the CSV export writes one row per action with a Command\nResult column, so a real failure is a filter away instead of buried in a\nbatch summary.\n\nEvery AD command now keeps its own evidence. History records the exit code,\nstart time, duration, the exact script and verification script, and the raw\noutput PowerShell wrote, and failed rows show that transcript in the row\ndetails. The next time a command misbehaves you can read what happened\ninstead of reproducing it.\n\nFeedback reports can now carry a diagnostic log. The Feedback dialog offers\na previewable snapshot of the recent application log and the most recent AD\nchange records - including those command transcripts - before anything is\nsent. It goes to the tool team as an attachment, and the dialog says so if\nan attachment fails to upload.\n\nIf you are still on 0.3.7, this also brings everything from 0.4.0: the\nbuilt-in OnBase API onboarding guide on the Credential Setup screen, and\nthe explicit New Project flow.\n"
 }
